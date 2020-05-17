@@ -1,0 +1,24 @@
+<!DOCTYPE html><html lang="Ru-ru"><head><meta charset="UTF-8"><title>7 способов увеличить скорость чтения.</title><link rel="stylesheet" href="css/lib/bootstrap.min.css"><link rel="stylesheet" href="css/main.css"><link rel="shortcut icon" href="favicon.ico" type="image/png"></head><body><div class="wrapper"><nav class="menu"><ul><li><a href="#" tooltip="На главную" flow="right"><i class="fa fa-home" aria-hidden="true"></i></a></li></ul></nav><blockquote class="quote">Ты никогда не победишь, если никогда не приступишь.<br><span>Роберт Шуллер</span></blockquote><section class="wrap_info"><div class="info"><i class="fa fa-bookmark-o" aria-hidden="true"></i><div class="info_img"><img class="preview_photo" src="img/6.jpg" alt="pre view photo"></div><div class="info__wrapContent"><h1 class="info__head">Условия по заливам</h1><p class="info__content">Работаем 50% на 50% Минимальные заливы от 50 000 рублей Сроки — в течении 10 часов после оформления сделки через гаранта. Сразу напишу — ПРЕДОПЛАТА 10% от суммы залива, которую вы хотите получить. Куда заливаем?: 1. Банковские счета РФ и Украины 2. Платежные системы: Яндекс Деньги, WebMoney, Qiwi, Payeer, Skrill, …</p></div><span class="info__qtyComment"><i class="fa fa-comments-o" aria-hidden="true"></i><a href="#">&nbsp;1 комментариев</a></span><div class="info__date">ОТ ADMIN 22 Сентября 2017 Новости</div></div><div class="info"><i class="fa fa-bookmark-o" aria-hidden="true"></i><div class="info_img"><img class="preview_photo" src="img/2.jpg" alt="pre view photo"></div><div class="info__wrapContent"><h1 class="info__head">Условия по заливам</h1><p class="info__content">Работаем 50% на 50% Минимальные заливы от 50 000 рублей Сроки — в течении 10 часов после оформления сделки через гаранта. Сразу напишу — ПРЕДОПЛАТА 10% от суммы залива, которую вы хотите получить. Куда заливаем?: 1. Банковские счета РФ и Украины 2. Платежные системы: Яндекс Деньги, WebMoney, Qiwi, Payeer, Skrill, …</p></div><span class="info__qtyComment"><i class="fa fa-comments-o" aria-hidden="true"></i><a href="#">&nbsp;1 комментариев</a></span><div class="info__date">ОТ ADMIN 22 Сентября 2017 Новости</div></div></section></div><script>// just helper stuff for example controls
+    // not needed for actual tooltips
+    let input = document.querySelector('input');
+    let output = document.querySelector('textarea');
+    let main = document.querySelector('.examples');
+    let tooltips = main.querySelectorAll('[tooltip]');
+
+    input.addEventListener('keyup', (e) => {
+        tooltips.forEach(function (element) {
+            element.setAttribute('tooltip', e.target.value)
+        })
+    });
+    input.addEventListener('focus', (e) => {
+        main.classList.add('helper')
+    });
+    input.addEventListener('blur', (e) => {
+        main.classList.remove('helper')
+    });
+
+    document.addEventListener('mouseover', (e) => {
+        if (e.target.tagName === 'SPAN') {
+            output.value = e.target.outerHTML
+        }
+    });</script></body></html>
